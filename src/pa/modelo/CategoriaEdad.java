@@ -1,4 +1,4 @@
-package pa.modelo2.modelo;
+package pa.modelo;
 
 public enum CategoriaEdad {
     JUVENIL,

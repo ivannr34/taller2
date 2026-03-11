@@ -1,13 +1,30 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package pa.dao;
 
+import java.util.List;
+import pa.dto.MinipigDTO;
+
 /**
- *
- * @author ivanq
+ * Interfaz que define las operaciones de acceso a datos
+ * para los objetos Minipig.
  */
-public class MinipigDAO {
-    
+public interface MinipigDAO {
+
+    void insertar(MinipigDTO minipig);
+
+    MinipigDTO consultarPorCodigo(String codigo);
+
+    MinipigDTO consultarPorMicrochip(String microchip);
+
+    List<MinipigDTO> consultarPorNombre(String nombre);
+
+    List<MinipigDTO> consultarPorRaza(String raza);
+
+    List<MinipigDTO> obtenerTodos();
+
+    void eliminarPorCodigo(String codigo);
+
+    void eliminarPorMicrochip(String microchip);
+
+    void actualizar(MinipigDTO minipig);
 }
