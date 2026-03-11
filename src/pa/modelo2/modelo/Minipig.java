@@ -1,15 +1,16 @@
 package pa.modelo2.modelo;
 
 public class Minipig {
-    
-  private String codigo;
+
+    private String codigo;
     private String nombre;
     private Genero genero;
     private String idMicrochip;
     private Raza raza;
     private String color;
     private double peso;
-    private double altura;
+    private CategoriaEdad categoriaEdad;
+    private CategoriaAltura categoriaAltura;
     private String caracteristica1;
     private String caracteristica2;
     private String urlFoto;
@@ -18,8 +19,9 @@ public class Minipig {
     }
 
     public Minipig(String codigo, String nombre, Genero genero, String idMicrochip,
-                   Raza raza, String color, double peso, double altura,
-                   String caracteristica1, String caracteristica2, String urlFoto) {
+            Raza raza, String color, double peso, CategoriaAltura categoriaAltura,
+            CategoriaEdad categoriaEdad,
+            String caracteristica1, String caracteristica2, String urlFoto) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.genero = genero;
@@ -27,7 +29,8 @@ public class Minipig {
         this.raza = raza;
         this.color = color;
         this.peso = peso;
-        this.altura = altura;
+        this.categoriaAltura = categoriaAltura;
+        this.categoriaEdad = categoriaEdad;
         this.caracteristica1 = caracteristica1;
         this.caracteristica2 = caracteristica2;
         this.urlFoto = urlFoto;
@@ -89,12 +92,20 @@ public class Minipig {
         this.peso = peso;
     }
 
-    public double getAltura() {
-        return altura;
+    public CategoriaAltura getCategoriaAltura() {
+        return categoriaAltura;
     }
 
-    public void setAltura(double altura) {
-        this.altura = altura;
+    public void setCategoriaAltura(CategoriaAltura categoriaAltura) {
+        this.categoriaAltura = categoriaAltura;
+    }
+
+    public CategoriaEdad getCategoriaEdad() {
+        return categoriaEdad;
+    }
+
+    public void setCategoriaEdad(CategoriaEdad categoriaEdad) {
+        this.categoriaEdad = categoriaEdad;
     }
 
     public String getCaracteristica1() {
