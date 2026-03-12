@@ -1,0 +1,134 @@
+package pa.modelo;
+
+public class Minipig {
+
+    private String codigo;
+    private String nombre;
+    private Genero genero;
+    private String idMicrochip;
+    private Raza raza;
+    private String color;
+    private double peso;
+    private CategoriaEdad categoriaEdad;
+    private CategoriaAltura categoriaAltura;
+    private String caracteristica1;
+    private String caracteristica2;
+    private String urlFoto;
+
+    public Minipig() {
+    }
+
+    public Minipig(String codigo, String nombre, Genero genero, String idMicrochip,
+            Raza raza, String color, double peso, CategoriaAltura categoriaAltura,
+            CategoriaEdad categoriaEdad,
+            String caracteristica1, String caracteristica2, String urlFoto) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.genero = genero;
+        this.idMicrochip = idMicrochip;
+        this.raza = raza;
+        this.color = color;
+        this.peso = peso;
+        this.categoriaAltura = categoriaAltura;
+        this.categoriaEdad = categoriaEdad;
+        this.caracteristica1 = caracteristica1;
+        this.caracteristica2 = caracteristica2;
+        this.urlFoto = urlFoto;
+    }
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Genero getGenero() {
+        return genero;
+    }
+
+    public void setGenero(Genero genero) {
+        this.genero = genero;
+    }
+
+    public String getIdMicrochip() {
+        return idMicrochip;
+    }
+
+    public void setIdMicrochip(String idMicrochip) {
+        this.idMicrochip = idMicrochip;
+    }
+
+    public Raza getRaza() {
+        return raza;
+    }
+
+    public void setRaza(Raza raza) {
+        this.raza = raza;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public CategoriaAltura getCategoriaAltura() {
+        return categoriaAltura;
+    }
+
+    public void setCategoriaAltura(CategoriaAltura categoriaAltura) {
+        this.categoriaAltura = categoriaAltura;
+    }
+
+    public CategoriaEdad getCategoriaEdad() {
+        return categoriaEdad;
+    }
+
+    public void setCategoriaEdad(CategoriaEdad categoriaEdad) {
+        this.categoriaEdad = categoriaEdad;
+    }
+
+    public String getCaracteristica1() {
+        return caracteristica1;
+    }
+
+    public void setCaracteristica1(String caracteristica1) {
+        this.caracteristica1 = caracteristica1;
+    }
+
+    public String getCaracteristica2() {
+        return caracteristica2;
+    }
+
+    public void setCaracteristica2(String caracteristica2) {
+        this.caracteristica2 = caracteristica2;
+    }
+
+    public String getUrlFoto() {
+        return urlFoto;
+    }
+
+    public void setUrlFoto(String urlFoto) {
+        this.urlFoto = urlFoto;
+    }
+}
